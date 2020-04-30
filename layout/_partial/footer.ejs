@@ -3,42 +3,62 @@
     <div id="footer-info">
     	<div class="footer-left">
     		&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
-    	</div>
+		</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/GH670/yileas" target="_blank">Yileas</a> by GH670
-      	</div>
+		</div>
     </div>
   </div>
+
 <!--《添加网站运行时间 -->
 <!--<br/>-->
+<a>⏰</a>
 <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
 <script>
-    var now = new Date();
-
-    function createtime() {
-        var grt = new Date("01/01/2020 01:00:00"); //此处修改你的建站时间或者网站上线时间 
-        now.setTime(now.getTime() + 250);
-        days = (now - grt) / 1000 / 60 / 60 / 24;
-        dnum = Math.floor(days);
-        hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
-        hnum = Math.floor(hours);
-        if (String(hnum).length == 1) {
-            hnum = "0" + hnum;
-        }
-        minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
-        mnum = Math.floor(minutes);
-        if (String(mnum).length == 1) {
-            mnum = "0" + mnum;
-        }
-        seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-        snum = Math.round(seconds);
-        if (String(snum).length == 1) {
-            snum = "0" + snum;
-        }
-        document.getElementById("timeDate").innerHTML = " 本站已安全运行 " + dnum + " 天 ";
-        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
-    }
-    setInterval("createtime()", 250);
+	var now = new Date();
+	
+	function createtime() {
+		var grt = new Date("01/01/2020 01:00:00"); //此处修改你的建站时间或者网站上线时间 
+		now.setTime(now.getTime() + 250);
+		days = (now - grt) / 1000 / 60 / 60 / 24;
+		dnum = Math.floor(days);
+		hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+		hnum = Math.floor(hours);
+		if (String(hnum).length == 1) {
+			hnum = "0" + hnum;
+		}
+		minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+		mnum = Math.floor(minutes);
+		if (String(mnum).length == 1) {
+			mnum = "0" + mnum;
+		}
+		seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+		snum = Math.round(seconds);
+		if (String(snum).length == 1) {
+			snum = "0" + snum;
+		}
+		document.getElementById("timeDate").innerHTML = " 本站已安全运行 " + dnum + " 天 ";
+		document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+		}
+	setInterval("createtime()", 250);
 </script>
+<a>🎉</a>
 <!-- 添加网站运行时间》 -->
+
+  <% if (theme.busuanzi && theme.busuanzi.enable){ %>
+	<script src="<%- url_for('lib/busuanzi.pure.js') %>"></script>
+	<%# "<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>" %>
+  <% } %>
+  <% if (theme.busuanzi && theme.busuanzi.enable && theme.busuanzi.site_visit){ %>
+	<%# "不蒜子统计" %>
+	<span id="busuanzi_container_site_pv" style="display:none">
+		本站总访问量<span id="busuanzi_value_site_pv"></span>次	
+	        <span class="post-meta-divider" >🎈</span>
+	</span>
+  	<span id="busuanzi_container_site_uv" style='display:none'>
+  		本站访客数<span id="busuanzi_value_site_uv"></span>人
+  	</span>
+  <% } %>
+
+
 </footer>
