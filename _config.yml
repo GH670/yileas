@@ -1,27 +1,31 @@
 # Header
 
 menu:
-  主页: /
-  随笔: /tags/随笔/
+  我的主页: /
+  随笔记事: /tags/notes/
+  人间美好: /photos/
+  个人简历:
+  留言簿: /Guestbook/
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
   rss: "#"
-  zhihu: "#"
-  #qq: "#"
-  #weixin: "#"
+  mail: "mailto:itboy001@qq.com"
+  qq: "#"
+  weixin: "#"
+  #github: "#"
+  #weibo: "#"
+  #zhihu: "#"
   #jianshu: "#"
   #douban: "#"
   #segmentfault: "#"
   #bilibili: "#"
   #acfun: "#"
-  #mail: "mailto:litten225@qq.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
   #linkedin: "#"
+  
 
 rss: /atom.xml
 
@@ -45,7 +49,7 @@ open_in_new: false
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
 reward_type: 2
 # 打赏wording
-reward_wording: '谢谢你请我吃糖果'
+reward_wording: 'Thank you for your support and encouragement'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
 alipay: 
 # 微信二维码图片地址
@@ -102,7 +106,7 @@ style:
   # 头像上面的背景颜色
   header: '#4d4d4d'
   # 右滑板块背景
-  slider: 'linear-gradient(200deg,#a0cfe4,#e8c37e)'
+  slider: 'linear-gradient(200deg,#ccc,#000)'
 
 # slider的设置
 slider:
@@ -119,6 +123,7 @@ smart_menu:
   friends: '友链'
   aboutme: '关于我'
 
+
 friends:
   友情链接1: http://localhost:4000/
   友情链接2: http://localhost:4000/
@@ -127,4 +132,5 @@ friends:
   友情链接5: http://localhost:4000/
   友情链接6: http://localhost:4000/
 
-aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+
+aboutme: 大多数里最不显眼的那一个<br><br>对科技生活充满兴趣<br><br>完善中...
