@@ -17,6 +17,12 @@
       <% } else { %>
         <%- post.content %>
       <% } %>
+      
+    <!-- 《添加版权声明 -->
+    <% if(theme.declare){%>
+      <%- partial('post/declare') %>
+    <% } %>
+    <!-- 添加版权声明》 -->
 
       <% if ((theme.reward_type === 2 || (theme.reward_type === 1 && post.reward)) && !index){ %>
         <div class="page-reward">
@@ -51,6 +57,7 @@
         </div>
       <% } %>
     </div>
+
     <div class="article-info article-info-index">
       <%if(post.top){%>
         <div class="article-pop-out tagcloud">
@@ -72,12 +79,12 @@
       <div class="clearfix"></div>
     </div>
   </div>
+
 </article>
 <% if (!index){ %>
   <%- partial('post/nav') %>
 <% } %>
 <%- partial('_partial/aside') %>
-
 
 <% if (!index && post.comments){ %>
   <% if (theme.duoshuo){ %>
