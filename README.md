@@ -14,6 +14,8 @@ hexo-theme-yileas🎈
 5. 添加天气功能模块
 6. 添加版权声明
 7. 添加valine评论系统
+8. 修复部分bug,修复微信分享，添加文章访问量统计
+9. 添加字数、阅读时长统计（博客根目录：npm i -save hexo-wordcount）
 
 ### 可选：
 ~~1. DaoVoice在线聊天~~  

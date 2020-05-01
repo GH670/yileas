@@ -133,6 +133,7 @@ declare:
   licensee_alias: '知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议'       # alias别名
   licensee_img: https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png    #版权协议的Logo
 
+
 # 心知天气(如果不用为false):https://www.seniverse.com
 xinzhi_weather: true
 
@@ -147,6 +148,9 @@ style:
 slider:
   # 是否默认展开tags板块
   showTags: false
+
+#字数、阅读时长统计
+word_count: true
 
 #不蒜子访问量统计
 busuanzi:
