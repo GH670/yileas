@@ -61,13 +61,22 @@
       <% } %>
     </div>
 
+
     <div class="article-info article-info-index">
-      <%if(post.top){%>
+
+      <% if (page.top) { %>
+        <!--
         <div class="article-pop-out tagcloud">
           <i class="icon-tuding"></i>
           <a class="article-tag-list-link color3">置顶</a>
         </div>
+        -->
+        <i class="fa fa-thumb-tack"></i>
+        <font color=7D26CD>置顶</font>
+        <span class="post-meta-divider"></span>
       <% } %>
+
+
       <%- partial('post/tag') %>
       <%- partial('post/category') %>
       <% if (index && theme.show_all_link){ %>
