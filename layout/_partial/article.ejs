@@ -79,14 +79,29 @@
       <div class="clearfix"></div>
     </div>
   </div>
-
 </article>
+
 <% if (!index){ %>
   <%- partial('post/nav') %>
 <% } %>
 <%- partial('_partial/aside') %>
 
 <% if (!index && post.comments){ %>
+
+  <% if (theme.valine && ((theme.valine.appId && theme.valine.appKey) || (theme.valine.appid && theme.valine.appkey))){ %>
+    <section id="comments" class="comments">
+      <style>
+        .comments{margin:30px;padding:10px;background:#fff}
+        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+      </style>
+      <%- partial('post/valine', {
+        key: post.slug,
+        title: post.title,
+        url: config.url+url_for(post.path)
+        }) %>
+    </section>
+  <% } %>
+  
   <% if (theme.duoshuo){ %>
   <%- partial('post/duoshuo', {
       key: post.slug,

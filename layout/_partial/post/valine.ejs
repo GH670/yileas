@@ -1,0 +1,9 @@
+<div id="vcomment"></div>
+<script src="https://cdn.jsdelivr.net/npm/valine@<%= theme.valine.version %>/dist/Valine.min.js"></script>
+<script>
+  var valineConifg = <%- JSON.stringify(theme.valine)%>;
+  valineConifg.el = '#vcomment';
+    window.onload = function(){
+      new Valine(valineConifg);
+    }
+</script>

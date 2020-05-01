@@ -101,6 +101,27 @@ gitment_oauth:
   client_id: ''           #client ID
   client_secret: ''       #client secret
 
+#6、Valine https://valine.js.org
+valine:
+  appId: "" #Leancloud应用的appId
+  appKey: "" #Leancloud应用的appKey
+  verify: false #验证码
+  notify: true #评论回复提醒
+  avatar: robohash #评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide
+  #avatar_cdn: "" #头像CDN
+  placeholder: 
+    "友情提示，留下正确的邮箱地址可以第一时间获取评论反馈。" #评论框占位符
+  pageSize: 12 #评论分页
+  visitor: true #阅读统计
+  recordIP: true #记录IP
+  enableQQ: true #QQ头像
+  #serverURLs: ""
+  version: latest #例如 latest 1.4.5
+#  emojiCDN: https://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/
+#  emojiMaps:
+#    smile: e3/2018new_weixioa02_org.png
+#    lovely: 09/2018new_keai_org.png
+
 
 # 版权声明
 #在需要进行版权声明的文章的md文件头部，设置属性declare: true。
