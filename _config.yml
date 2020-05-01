@@ -101,6 +101,9 @@ gitment_oauth:
   client_id: ''           #client ID
   client_secret: ''       #client secret
 
+# 心知天气(如果不用为false):https://www.seniverse.com
+xinzhi_weather: true
+
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
   # 头像上面的背景颜色
