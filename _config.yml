@@ -149,6 +149,11 @@ slider:
   # 是否默认展开tags板块
   showTags: false
 
+# Security
+## 文章加密 hexo-blog-encrypt
+encrypt:
+    enable: true
+    
 #字数、阅读时长统计
 word_count: true
 
