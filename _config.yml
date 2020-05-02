@@ -71,7 +71,7 @@ baidu_analytics: ''
 google_analytics: ''
 
 # 网站图标-生成ico图片格式：http://ico.duduxuexi.com/
-favicon: /favicon.png
+favicon: /favicon.ico
 
 #你的头像url
 avatar:

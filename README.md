@@ -1,7 +1,7 @@
 # yileas
 hexo-theme-yileas🎈
 基于[yilia主题](https://github.com/litten/hexo-theme-yilia)的个性化定制——**yileas**  
-> 欢迎访问我的博客：[wblog.tech](wblog.tech) 查看效果。
+> 欢迎访问我的博客：[wblog.tech](https://wblog.tech/) 查看效果。
 ## **yileas → 注重准确,崇尚简洁**  
 目前仅仅对原主题进行了 _魔改_ .  
 后续会**慢慢地**对其进行更改  
@@ -51,3 +51,4 @@ top后面的数字越大，优先级越高。
 2. yileas为yilia的个人魔改版。因yilia作者已停止对其主题的维护更新，故对此进行深度修改定制，形成自己特有的主题风格。
 3. yileas为吸取各路大神经验总结而成，感谢开源、感谢互联网🌏
 4. 不定时→偶尔更新维护
+5. 依然存在很多的bug,欢迎大家提出issue.
