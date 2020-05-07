@@ -90,7 +90,9 @@
         <ul class="search-ul">
           <% for (var i in theme.friends){ %>
             <li class="search-li">
-              <a href="<%- url_for(theme.friends[i]) %>" target="_blank" class="search-title"><i class="icon-link icon"></i><%= i %></a>
+              <a href="<%- url_for(theme.friends[i]) %>" target="_blank" class="search-title"><!--<i class="icon-link icon"></i>-->
+                <img class="imgUrl" src="<%=  url_for(theme.friends[i]) + 'favicon.ico' %>"  alt="icon" height="25" width="25"  />&nbsp&nbsp&nbsp
+                <%= i %></a>
             </li>
           <% } %>
         </ul>
@@ -107,4 +109,13 @@
     <%}%>
   </div>
   
+  <script type="text/javascript">
+    t = document.getElementsByClassName("imgUrl");
+    for(i = 0; i < t.length; i++){
+        t.item(i).onerror = function(){
+          this.src = "https://GH670.github.io/F3yaX.png"
+        }
+      }
+  </script>
+
 </div>
