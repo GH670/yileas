@@ -5,7 +5,8 @@ menu:
   📕随笔记事: /tags/notes/
   📷人间美好: /photos/
   👔个人简历:
-  📝留言簿: /Guestbook/
+  🎈微 · 语 : /shuoshuo/
+  📝留 言 簿: /Guestbook/
 
 # SubNav
 subnav:
@@ -47,7 +48,7 @@ open_in_new: false
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
-reward_type: 2
+reward_type: 1
 # 打赏wording
 reward_wording: 'Thank you for your support and encouragement'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg

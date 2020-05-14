@@ -30,6 +30,12 @@ message: 这个是博客查看时，密码输入框上面的描述性文字
 修改博客根目录下的_config.yml → index_generator（order_by: top: -1 date: -1 ）  
 在需要置顶的文章的Front-matter中加上top选项即可  
 top后面的数字越大，优先级越高。
+12. 添加"说说"功能，可动态实时发布说说。(博客根目录下：hexo new page shuoshuo)
+
+### 注意
+1. 博客根目录下的_config.yml需按照自己所需更改。
+2. 主题根目录下的_config.yml按照所给'框架'填写即可，可自行按照所需更改。
+3. 。。。
 
 ### 待续...
 1. 优化..
