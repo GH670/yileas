@@ -60,5 +60,17 @@
   	</span>
   <% } %>
 
+<!-- 《网站备案号 -->
+<% if (theme.icp && theme.icp.enable && theme.icp.id){ %>
+    <div class="BeiAn-info">
+        <img src="https://static.dy208.cn/o_1dfilp8ruo521thr1hvf18ji17soa.png" title="备案管理系统">
+        <a href="http://www.beian.miit.gov.cn/" style="color:#f72b07" target="_blank" title="备案号">
+            <%- theme.icp.id %>
+        </a>
+    </div>
+<% } %>
+<!-- 网站备案号》 -->
+
+
 
 </footer>

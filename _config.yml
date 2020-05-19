@@ -136,6 +136,13 @@ declare:
   licensee_alias: '知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议'       # alias别名
   licensee_img: https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png    #版权协议的Logo
 
+# ICP备案信息（英文全称：Internet Content Provider，中文全称：网络内容提供商。）
+# 参考：https://blog.csdn.net/qq_37449342/article/details/95649140
+# 京ICP备00000000号
+icp:
+ enable: false
+ id: '京ICP备00000000号'  # 备案号
+
 
 # 心知天气(如果不用为false):https://www.seniverse.com
 xinzhi_weather: true
